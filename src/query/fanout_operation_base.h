@@ -79,7 +79,7 @@ class FanoutOperationBase {
 
   static int Timeout(ValkeyModuleCtx* ctx, ValkeyModuleString** argv,
                      int argc) {
-    return ValkeyModule_ReplyWithError(ctx, "Request timed out");
+    return ValkeyModule_ReplyWithError(ctx, "Request timed out during cluster fanout");
   }
 
   static void Free(ValkeyModuleCtx* ctx, void* privdata) {
