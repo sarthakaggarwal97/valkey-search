@@ -1,7 +1,24 @@
 Valkey Search 1.2 release notes
 ===============================
 
-================================================================================
+Upgrade urgency levels:
+
+| Level    | Meaning                                                             |
+|----------|---------------------------------------------------------------------|
+| LOW      | No need to upgrade unless there are new features you want to use.   |
+| MODERATE | Program an upgrade of the server, but it's not urgent.              |
+| HIGH     | There is a critical bug that may affect a subset of users. Upgrade! |
+| CRITICAL | There is a critical bug affecting MOST USERS. Upgrade ASAP.         |
+| SECURITY | There are security fixes in the release.                            |
+
+Valkey Search 1.2.2  -  Released Wed 19 August 2026
+---------------------------------------------------
+
+Upgrade urgency LOW: No need to upgrade unless there are new features you want to use.
+
+### Bug Fixes
+* `FT.SEARCH` timeout errors now identify the cluster fanout phase, helping clients distinguish distributed query timeouts from local failures by @sarthakaggarwal97 (#8)
+
 Valkey Search 1.2.1 GA - Released Tue 07 July 2026
 ================================================================================
 
@@ -137,25 +154,26 @@ Major New Features / Updates
 * @Aksha1812
 * @AlexFilipImproving
 * @allenss-amazon
+* @Arunsarma07
+* @bandalgomsu
 * @baswanth09
 * @BCathcart
+* @boda26
 * @daddaman-amz
 * @eifrah-aws
 * @eliastam
 * @eric-musliner
-* @murphyjacob4
+* @Frank-Gu-81
+* @hjkwon0
 * @KarthikSubbarao
-* @otherscase
-* @boda26
-* @Arunsarma07
+* @linbran5123
+* @murphyjacob4
 * @Nivesh-01
+* @otherscase
+* @rlunar
+* Sarthak Aggarwal @sarthakaggarwal97
+* @smkher
 * @VoletiRam
 * @yairgott
 * @yanamolo
 * @zvi-code
-* @rlunar
-* @bandalgomsu
-* @Frank-Gu-81
-* @hjkwon0
-* @smkher
-* @linbran5123
